@@ -1,0 +1,53 @@
+.Home .title {
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url("https://2hj000.p3cdn1.secureserver.net/wp-content/uploads/2022/07/BuildingCrop1-2048x730.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -140px;
+}
+
+.Home h2 {
+  padding: 10px 15px 10px 75px;
+  color: #fff;
+  font-style: italic;
+  font-size: 28px;
+  text-shadow: 2px 2px 2px #00000060;
+  background-color: #527ce4;
+  box-shadow: 2px 2px 2px #00000060;
+}
+
+.Home .subtitle{
+ display: flex;
+ justify-content: center;
+ gap: 10px;
+}
+
+.Home .subtitle h3 {
+    color: #527ce4;
+    font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.Home hr{
+    width: 50%;
+    border: 1px solid #527ce4;
+}
+
+.Home .intro{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px 15px 20px;
+    text-align: center;
+}
+
+.Home .inventory{
+    background-image: url("https://2hj000.p3cdn1.secureserver.net/wp-content/uploads/2023/11/IMG_4098-2048x1536.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
