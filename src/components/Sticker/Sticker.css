@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Londrina+Shadow&display=swap");
+
+.Sticker {
+  text-align: center;
+  width: 80%;
+  width: 350px;
+  box-shadow: 2px 2px 4px #00000060;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.Sticker h5 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+  color: #000;
+}
+
+.Sticker .discount {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  transform: translateY(5px);
+}
+
+.Sticker .percentage {
+  display: flex;
+}
+
+.Sticker .outline {
+  width: 0;
+  font-weight: bold;
+  margin: 0;
+  color: #000;
+  line-height: 1;
+  position: relative;
+  font-family: "Londrina Shadow", sans-serif;
+  font-size: 100px;
+  position: relative;
+  transform: translateX(-162.5px) translateY(-5px);
+}
+
+.Sticker .solid {
+  font-weight: bold;
+  margin: 0;
+  color: #000;
+  line-height: 1;
+  position: relative;
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 100px;
+  position: relative;
+}
+
+.Sticker p {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  color: #000;
+}
+
+.Sticker .off {
+  display: inline-block;
+  transform: rotate(90deg) translateX(-5px) translateY(15px);
+  font-size: 52px;
+  font-weight: bold;
+  color: #000;
+  font-family: "Londrina Solid", sans-serif;
+  text-shadow: none;
+}
+
+.Sticker .white {
+  background-color: #fff;
+}
+
+.Sticker.pink {
+  background-color: #ff4dc6;
+}
+
+.Sticker.green {
+    background-color: #25de40;
+  }
+
+  .Sticker.yellow {
+    background-color: #fffb00;
+  }
+
+.Sticker.pink .solid {
+  color: #ff4dc6;
+}
+
+.Sticker.green .solid {
+  color: #25de40;
+}
+
+.Sticker.yellow .solid {
+    color: #fffb00;
+  }

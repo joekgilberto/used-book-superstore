@@ -1,6 +1,12 @@
 import "./Home.css";
+import { useEffect } from "react";
+import Sticker from "../../components/Sticker/Sticker";
 
-export default function Home() {
+export default function Home({ setPage }) {
+  useEffect(() => {
+    setPage("home");
+  }, []);
+
   return (
     <div className="Home">
       <div className="title">
@@ -22,8 +28,12 @@ export default function Home() {
       <hr />
       <div className="intro">
         <p>
-          We have over <strong><em>100,000</em></strong> books on our shelves, and we add more every
-          single day, so you never know what you’ll find. Visit us and explore!
+          We have over{" "}
+          <strong>
+            <em>100,000</em>
+          </strong>{" "}
+          books on our shelves, and we add more every single day, so you never
+          know what you’ll find. Visit us and explore!
         </p>
         <p>
           And those reusable bags you have in your car? You’re probably gonna
@@ -32,7 +42,7 @@ export default function Home() {
       </div>
       <div className="inventory">
         <div className="list">
-          <p>We have more than books. We also have:</p>
+          <h4>We have more than books. We also have:</h4>
           <ul>
             <li>DVDs</li>
             <li>Blu-rays</li>
@@ -42,9 +52,25 @@ export default function Home() {
             <li>CDs</li>
             <li>And more!</li>
           </ul>
+          <p>
+            Nothing sits on our shelves for more than <strong>6 months</strong>!
+          </p>
         </div>
       </div>
-      <p>Nothing sits on our shelves for more than <strong><em>6 months</em></strong>!</p>
+      <div className="price">
+        <h3>PRICE STICKER DISCOUNTS</h3>
+        <hr />
+        <p>
+          We always have sales happening for our used items, ranging from an
+          extra 20% to 80% off!
+        </p>
+        <p>Excludes clearance, comic books, and records.</p>
+        <div className="stickers">
+          <Sticker color={'pink'} discount={75} />
+          <Sticker color={'green'} discount={30} />
+          <Sticker color={'yellow'} discount={20} />
+        </div>
+      </div>
     </div>
   );
 }
