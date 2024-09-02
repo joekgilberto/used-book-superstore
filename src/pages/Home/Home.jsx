@@ -11,9 +11,20 @@ export default function Home({ setPage }) {
     <div className="Home">
       <div className="title">
         <h2>
-          THE LARGEST USED BOOKSTORE
+          THE LARGEST USED BOOKSTORE IN
           <br />
-          IN NEW ENLGAND
+          <span className="new-england">
+            <span>N</span>
+            <span>E</span>
+            <span>W</span>&nbsp;
+            <span>E</span>
+            <span>N</span>
+            <span>G</span>
+            <span>L</span>
+            <span>A</span>
+            <span>N</span>
+            <span>D</span>
+          </span>
         </h2>
       </div>
       <div className="subtitle">
@@ -67,6 +78,7 @@ export default function Home({ setPage }) {
         <p className="disclaimer">
           *Excludes clearance, comic books, and records.
         </p>
+        <div className="sales">
         <div className="dates">
           <p>Monday, August 19th through Sunday, August 25th</p>
         </div>
@@ -75,9 +87,9 @@ export default function Home({ setPage }) {
           <Sticker color={"green"} discount={30} />
           <Sticker color={"yellow"} discount={20} />
         </div>
+        </div>
       </div>
       <div className="hours">
-      <hr />
         <h3>STORE HOURS</h3>
         <p>Monday – Saturday: 10 AM to 7 PM</p>
         <p>Sunday: 10 AM to 6 PM</p>

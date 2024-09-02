@@ -15,8 +15,55 @@
   font-style: italic;
   font-size: 28px;
   text-shadow: 2px 2px 2px #00000060;
-  background-color: #527ce4;
+  background: linear-gradient(45deg, #7d86ff, #3867db);
   box-shadow: 2px 2px 2px #00000060;
+}
+
+.new-england {
+  display: flex;
+  font-size: 44px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.new-england span {
+  display: inline-block;
+  animation: gameboy 1.5s ease-in-out forwards;
+  position: relative;
+}
+
+.new-england span:nth-child(1) {
+  animation-delay: 0s;
+}
+.new-england span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.new-england span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.new-england span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.new-england span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.new-england span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.new-england span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.new-england span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.new-england span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.new-england span:nth-child(10) {
+  animation-delay: 0.9s;
+}
+.new-england span:nth-child(11) {
+  animation-delay: 1s;
 }
 
 .Home .subtitle {
@@ -45,12 +92,12 @@
   text-align: center;
 }
 
-.Home .intro{
-    padding: 10px 20px 35px 20px;
+.Home .intro {
+  padding: 10px 20px 35px 20px;
 }
 
-.Home .price{
-    padding: 10px 0 15px 0;
+.Home .price {
+  padding: 10px 0 0 0;
 }
 
 .Home .inventory {
@@ -60,9 +107,9 @@
   background-position: center center;
 }
 
-.Home .inventory{
-    display: flex;
-    justify-content: flex-end;
+.Home .inventory {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .Home .list {
@@ -72,72 +119,88 @@
   font-style: italic;
   font-size: 18px;
   text-shadow: 2px 2px 2px #00000060;
-  background-color: #527ce4;
+  background: linear-gradient(45deg, #7d86ff, #3867db);
   box-shadow: 2px 2px 2px #00000060;
 }
 
-.Home .list h4{
-    color: #e6dfff;
-    margin: 0;
+.Home .list h4 {
+  color: #e6dfff;
+  margin: 0;
 }
 
-.Home .list ul{
-    margin: 0 0 10px 0;
+.Home .list ul {
+  margin: 0 0 10px 0;
 }
 
-.Home .price h3{
-    font-size: 40px;
-    font-family: "Righteous", sans-serif;
-    margin: 5px 0;
-    text-shadow: 2px 2px 2px #00000040;
-    color: #527ce4;
+.Home .price h3 {
+  font-size: 40px;
+  font-family: "Righteous", sans-serif;
+  margin: 5px 0;
+  text-shadow: 2px 2px 2px #00000040;
+  color: #527ce4;
 }
 
-.Home .disclaimer{
-    color: #667395;
-    font-size: 14px;
+.Home .disclaimer {
+  color: #667395;
+  font-size: 14px;
 }
 
-.Home .dates p{
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #527ce4;
-    margin: 0 0 10px 0;
-    color: #e6dfff;
-    text-shadow: 2px 2px 2px #00000040;
-    font-size: 30px;
+.Home .sales{
+    background: linear-gradient(45deg, #7d86ff, #3867db);
 }
 
-.Home .hours{
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.Home .dates p {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #e6dfff;
+  text-shadow: 2px 2px 2px #00000040;
+  font-size: 30px;
 }
 
-.Home .hours hr{
-    margin: 0 0 5px 0;
+.Home .hours {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.Home .hours h3{
-    margin: 15px 0 10px 0;
-    color: #527ce4;
-    font-size: 32px;
-    font-family: "Righteous", sans-serif;
+.Home .hours h3 {
+  margin: 15px 0 10px 0;
+  color: #527ce4;
+  font-size: 40px;
+  font-family: "Righteous", sans-serif;
 }
 
-.Home .hours p{
-    font-size: 20px;
-    margin: 5px 0;
+.Home .hours p {
+  font-size: 26px;
+  margin: 5px 0;
 }
 
 .Home .stickers {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
 }
 
+@keyframes gameboy {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}

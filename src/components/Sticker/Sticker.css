@@ -10,6 +10,7 @@
 
 .Sticker .white {
     background-color: #fff;
+    border-radius: 0 0 10px 10px;
   }
 
 .Sticker h5 {
@@ -71,6 +72,14 @@
 
 .Sticker .our{
     font-size: 28px;
+}
+
+.Sticker.pink,
+.Sticker.green,
+.Sticker.brown,
+.Sticker.yellow,
+.Sticker.purple{
+    border-radius: 10px;
 }
 
 .Sticker.pink {
