@@ -11,7 +11,7 @@
 
 .Home h2 {
   padding: 10px 15px 10px 55px;
-  color: #fff;
+  color: #e6dfff;
   font-style: italic;
   font-size: 28px;
   text-shadow: 2px 2px 2px #00000060;
@@ -25,9 +25,9 @@
   gap: 10px;
 }
 
-.Home h3 {
+.Home h4 {
   color: #527ce4;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -42,8 +42,15 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 10px 20px 15px 20px;
   text-align: center;
+}
+
+.Home .intro{
+    padding: 10px 20px 35px 20px;
+}
+
+.Home .price{
+    padding: 10px 0 15px 0;
 }
 
 .Home .inventory {
@@ -70,6 +77,7 @@
 }
 
 .Home .list h4{
+    color: #e6dfff;
     margin: 0;
 }
 
@@ -77,7 +85,59 @@
     margin: 0 0 10px 0;
 }
 
+.Home .price h3{
+    font-size: 40px;
+    font-family: "Righteous", sans-serif;
+    margin: 5px 0;
+    text-shadow: 2px 2px 2px #00000040;
+    color: #527ce4;
+}
+
+.Home .disclaimer{
+    color: #667395;
+    font-size: 14px;
+}
+
+.Home .dates p{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #527ce4;
+    margin: 0 0 10px 0;
+    color: #e6dfff;
+    text-shadow: 2px 2px 2px #00000040;
+    font-size: 30px;
+}
+
+.Home .hours{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home .hours hr{
+    margin: 0 0 5px 0;
+}
+
+.Home .hours h3{
+    margin: 15px 0 10px 0;
+    color: #527ce4;
+    font-size: 32px;
+    font-family: "Righteous", sans-serif;
+}
+
+.Home .hours p{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
 .Home .stickers {
     display: flex;
     justify-content: space-around;
 }
+

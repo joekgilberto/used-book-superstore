@@ -17,6 +17,12 @@ button {
   font-family: "Rubik", sans-serif;
 }
 
+p,
+li,
+button{
+  font-size: 18px;
+}
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -26,7 +32,7 @@ button {
   overflow-y: scroll;
   margin: 0;
   padding: 0;
-  background: repeating-linear-gradient(45deg, #ebf0ff, #ccdaff);
+  background: repeating-linear-gradient(45deg, #e6dfff, #ccdaff);
 }
 
 main {

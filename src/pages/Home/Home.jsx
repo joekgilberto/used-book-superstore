@@ -17,13 +17,13 @@ export default function Home({ setPage }) {
         </h2>
       </div>
       <div className="subtitle">
-        <h3>
+        <h4>
           <a href="https://www.google.com/maps/place/256+Cambridge+St,+Burlington,+MA+01803/@42.5139342,-71.2050267,17z/data=!3m1!4b1!4m6!3m5!1s0x89e39fe6726d552f:0xba31f4739f1628!8m2!3d42.5139303!4d-71.2024518!16s%2Fg%2F11bw4nnt1w?entry=ttu">
             256 Cambridge St., Burlington, MA 01803
           </a>
-        </h3>
-        <h3>|</h3>
-        <h3>(781) 272-6650</h3>
+        </h4>
+        <h4>|</h4>
+        <h4>(781) 272-6650</h4>
       </div>
       <hr />
       <div className="intro">
@@ -59,17 +59,28 @@ export default function Home({ setPage }) {
       </div>
       <div className="price">
         <h3>PRICE STICKER DISCOUNTS</h3>
-        <hr />
         <p>
-          We always have sales happening for our used items, ranging from an
-          extra 20% to 80% off!
+          We <strong>always</strong> have sales happening for our used items,
+          ranging from an extra <strong>20%</strong> to <strong>80%</strong>{" "}
+          off!
         </p>
-        <p>Excludes clearance, comic books, and records.</p>
-        <div className="stickers">
-          <Sticker color={'pink'} discount={75} />
-          <Sticker color={'green'} discount={30} />
-          <Sticker color={'yellow'} discount={20} />
+        <p className="disclaimer">
+          *Excludes clearance, comic books, and records.
+        </p>
+        <div className="dates">
+          <p>Monday, August 19th through Sunday, August 25th</p>
         </div>
+        <div className="stickers">
+          <Sticker color={"pink"} discount={75} />
+          <Sticker color={"green"} discount={30} />
+          <Sticker color={"yellow"} discount={20} />
+        </div>
+      </div>
+      <div className="hours">
+      <hr />
+        <h3>STORE HOURS</h3>
+        <p>Monday – Saturday: 10 AM to 7 PM</p>
+        <p>Sunday: 10 AM to 6 PM</p>
       </div>
     </div>
   );

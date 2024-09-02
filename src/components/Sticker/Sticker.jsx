@@ -12,7 +12,7 @@ export default function Sticker({color,discount}) {
         </div>
         <p className="off">OFF</p>
       </div>
-      <p>OUR STICKER PRICE</p>
+      <p className="our">OUR STICKER PRICE</p>
       </div>
     </div>
   );
